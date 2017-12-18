@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vendor/angular.js"></script>
+</head>
+<body ng-app="myApp">
+    <nav>
+    <!--ng-controller="navCtrl"-->
+        <button><img src="images/header-loading-logo.gif">Boards</button>
+        <div id="header-search">
+            <input type="text"/>
+            <a href="#">
+                <i class="fa fa-search fa-fw"></i>
+            </a>
+        </div>
+        <div id="logo"></div>
+    </nav>
+    <main ng-controller="boardCtrl">
+        <div class="list-item" ng-repeat="list in data">
+           <input class="list-header" type="text" value={{list.name}} name="titleInput" ng-model="title" ng-click="editInput()" required>
+           <div class="add-card" ng-click="showCard()">Add a card..</div>
+           <div ng-show="editNewCard">
+                <textarea name="card" id="" cols="30" rows="10"></textarea>
+                <button class="addInfo">Add</button>
+                <button class="delete" ng-click="hideCardEdit()">X</button>
+           </div>
+        </div>
+        <div class="add-list">
+            <input type="text" placeholder="Add a list..">
+        </div>
+    </main>
+    <script src="app.js"></script>
+    <!--<script SRC="js/controllers/nav.js"></script>-->
+    <script src="js/controllers/board.js"></script>
+    <script src="js/services/lists.js"></script>
+    <script src="js/vendor/lodash.js"></script>
+</body>
+</html>

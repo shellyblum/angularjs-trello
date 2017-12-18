@@ -1,0 +1,128 @@
+body {
+    margin:0;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #0079bf;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    background-color: #0067a3;
+}
+
+nav input {
+    background-color: transparent;
+}
+
+nav button {
+    height: 2em;
+    width: 7em;
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+nav button img {
+    width: 13px;
+}
+
+#header-search {
+    background-color: rgba(255,255,255,.3);
+    border-radius: 3px;
+    height: 2em;
+    width: 10em;
+    color: white;
+    line-height: 2em;
+}
+
+.fa-search {
+    color: white;
+}
+
+input, button {
+    background-color: rgba(255,255,255,.3);
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+input, button :focus {
+    outline: none;
+}
+
+#logo {
+    width: 40%;
+    height: 24px;
+    background-image: url(https://a.trellocdn.com/images/50b4ebc64391dc394a38e73aed57f0e2/header-logo.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 5pc 30px;
+    right: 0;
+    top: 0;
+}
+
+main {
+    color: #b3ccdb;
+}
+
+.list-item , .add-list {
+    width: 10%;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.list-item{
+    background-color: #e2e4e6;
+    color: black;
+    margin: 1em;
+    width: 269px;
+    height: 69px;
+    text-indent: 1em;
+}
+
+.list-header {
+    font-weight: bold;
+    display: inline-block; 
+    background-color: transparent;
+    height: 2em;
+    width: 70%;
+    font-size: 1em;
+    color: black;
+}
+
+.list-header :hover {
+    cursor: pointer;
+}
+
+.add-card {
+    height: 2em;
+    color: lightslategray;
+}
+
+.add-card :hover{
+    color:black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-list {
+    background-color: #005485;
+    width: 285px;
+    height: 38px;
+}
+
+.add-list input {
+    background-color: transparent;
+    text-indent: 1em;
+    font-size: 1em;
+    color: #93b7cb;
+}
+
+ .addInfo {
+    background-color: #539c3b;
+    font-weight: bold;
+} 
